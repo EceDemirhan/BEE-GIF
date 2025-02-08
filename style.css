@@ -1,0 +1,129 @@
+body{
+    background-color: rgb(188, 204, 186);
+    height: 100%;
+    overflow: hidden;
+    font-style: italic;
+}
+.wrap{
+    position: relative;
+}
+.wrap2{
+    font-style: italic;
+    position: absolute;
+    margin-top: -150px;
+    left: 20%;
+    animation: dodging 1s ease-in-out infinite ;
+}
+@keyframes dodging {
+    0%{
+        top:0;
+    }
+    50%{
+        top: 75px;
+    }
+    100%{
+        top: 0;
+
+    }
+}
+.beebody{
+    position: absolute;
+    top: 250px;
+    left: 250px;
+    height: 85px;
+    width: 75px;
+    border-radius: 100%;
+    background-color: rgb(248, 217, 65);
+    box-shadow: 20px 0 0 black,
+                40px -3px 0 rgb(248, 217, 65),
+                60px -7px 0 black,
+                80px -11px 0 rgb(248, 217, 65);
+
+
+}
+.wing{
+    position: absolute;
+    height: 55px;
+    width: 55px;
+    top: 210px;
+    left: 280px;
+    transform: rotate(20deg);
+    transform-origin: bottom right;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius:100% ;
+    border-top-left-radius:10px ;
+    background-color: black;
+    z-index: -1;
+    filter: blur(1px) ;
+    animation: flutter1 0.1s linear reverse infinite;
+
+}
+@keyframes flutter1{
+    0%{
+        transform: rotate(20deg);
+
+    }
+    50%{
+        transform: rotate(40deg);
+    }
+}
+.wing2{
+    position: absolute;
+    height: 55px;
+    width: 55px;
+    top: 205px;
+    left: 290px;
+    transform: rotate(80deg);
+    transform-origin: bottom right;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius:100% ;
+    border-top-left-radius:10px ;
+    background-color: black;
+    z-index: 1;
+    filter: blur(1px) ;
+    animation: flutter2 0.1s linear reverse infinite;
+}
+@keyframes flutter2{
+    0%{
+        transform: rotate(40deg);
+
+    }
+    50%{
+        transform: rotate(100deg);
+    }
+}
+.stinger{
+    position: absolute;
+    height: 55px;
+    width: 55px;
+    top: 255px;
+    left: 355px;
+    transform: rotate(320deg);
+    border-top-right-radius: 50%;
+    border-bottom-left-radius:100% ;
+    border-top-left-radius:10px ;
+    background-color: black;
+    z-index: -1;
+
+}
+.eyes{
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    top: 260px;
+    left: 250px;
+    background-color: white;
+    box-shadow: 20px 0 0 white;
+    border-radius: 100%;
+}
+.pupil{
+    position: absolute;
+    height: 4px;
+    width: 4px;
+    top: 13px;
+    left: 2px;
+    background-color: black;
+    box-shadow: 20px 0 0 black;
+    border-radius: 100%;
+
+}
